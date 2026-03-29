@@ -1,0 +1,99 @@
+# ──────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ──────────────────────────────────────────
+# Jupyter Notebooks
+# ──────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ──────────────────────────────────────────
+# ML / Data (large files)
+# ──────────────────────────────────────────
+ml/data/raw/
+ml/data/processed/
+ml/models/*.pkl
+ml/models/*.h5
+ml/models/*.pt
+ml/models/*.pth
+ml/models/*.onnx
+
+# Keep folder structure with .gitkeep
+!ml/data/raw/.gitkeep
+!ml/data/processed/.gitkeep
+!ml/data/sample/.gitkeep
+
+# ──────────────────────────────────────────
+# Environment Variables (NEVER commit these)
+# ──────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+!.env.example
+
+# ──────────────────────────────────────────
+# Backend
+# ──────────────────────────────────────────
+backend/uploads/
+backend/__pycache__/
+backend/**/__pycache__/
+
+# ──────────────────────────────────────────
+# Frontend / Node
+# ──────────────────────────────────────────
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.pnp
+frontend/.pnp.js
+frontend/coverage/
+frontend/.next/
+
+# ──────────────────────────────────────────
+# Docker
+# ──────────────────────────────────────────
+*.log
+docker-compose.override.yml
+
+# ──────────────────────────────────────────
+# Database
+# ──────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+
+# ──────────────────────────────────────────
+# OS Files
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────
+# IDEs & Editors
+# ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.iml
